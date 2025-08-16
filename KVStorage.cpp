@@ -41,10 +41,6 @@ public:
         }
 
         kv_map_[key] = timedKVMember{value, dt};
-
-        std::cout << "------" << std::endl;
-        std::cout << kv_map_.size() << " " << sizeof(kv_map_) << std::endl;
-        std::cout << sizeof(timedKVMember{value, dt}) << " " << sizeof(value) << " " << sizeof(int) << std::endl;
     }
 
     // Удаляет запись по ключу key.
